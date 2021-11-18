@@ -7,7 +7,7 @@ def notify():
     notification.title = "PoPy - Notify"
     notification.message = "Session Completed"
     notification.send()
-    os.system("mpv alarm3.wav")
+    os.system("mpv --really-quiet alarm_clock.mp3")
 
 from time import sleep
 
@@ -43,7 +43,7 @@ class PoPy(QMainWindow):
     def __init__(self, parent=None):
         """Initializer"""
         super().__init__(parent)
-        self.setTime = 1500
+        self.setTime = 5
         self._createViews()
         self._connectSignals()
 
