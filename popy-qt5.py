@@ -43,7 +43,7 @@ class PoPy(QMainWindow):
     def __init__(self, parent=None):
         """Initializer"""
         super().__init__(parent)
-        self.setTime = 5
+        self.setTime = 25
         self._createViews()
         self._connectSignals()
 
